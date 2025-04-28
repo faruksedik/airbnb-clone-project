@@ -215,3 +215,30 @@ The database structure is designed to support core functionalities of the Airbnb
 
 This structure ensures that the platform is able to efficiently handle user accounts, property listings, booking management, customer feedback, and financial transactions.
 
+
+## Feature Breakdown
+
+The Airbnb Clone project incorporates several essential features that replicate core functionalities of a real-world booking platform. Each feature plays a critical role in providing a seamless and efficient user experience.
+
+### 1. User Management
+This feature allows users to sign up, log in, and manage their profiles securely. It includes authentication mechanisms to ensure that user data is protected and only authorized actions can be performed.
+
+### 2. Property Management
+Hosts can create, update, and manage property listings, including adding details like descriptions, prices, and images. This feature is vital for providing guests with accurate and attractive options to choose from.
+
+### 3. Booking System
+Guests can view available properties and make reservations for specific dates. This system handles date validations, availability checks, and ensures that bookings are properly associated with both users and properties.
+
+### 4. Review System
+Guests can leave reviews and ratings for properties after completing their stay. This feature helps future guests make informed decisions based on the experiences of previous users, while also providing feedback to property hosts.
+
+### 5. Payment Processing
+The platform allows guests to make payments for their bookings securely. It tracks payment statuses and ensures that transactions are completed before bookings are confirmed, enhancing trust between users and the platform.
+
+### 6. API Security
+Security measures are implemented to protect sensitive data and ensure that only authenticated and authorized users can access certain functionalities. This is critical to maintaining the integrity and trustworthiness of the platform.
+
+### 7. CI/CD Integration
+Continuous Integration and Continuous Deployment processes are set up to automate testing and deployment. This ensures that new changes are reliably integrated into the platform with minimal downtime and reduced risk of errors.
+
+
