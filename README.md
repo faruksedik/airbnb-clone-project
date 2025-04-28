@@ -149,3 +149,69 @@ This project uses a combination of modern technologies to build a robust, scalab
 
 ### 5. GitHub Actions
 - **Purpose in the Project**: GitHub Actions automates the CI/CD process by running tests, building Docker images, and deploying updates automatically whenever new code is pushed to the repository. This ensures faster integration, fewer errors, and a smoother deployment workflow.
+
+## Database Design
+
+The database structure is designed to support core functionalities of the Airbnb Clone platform, ensuring efficient storage and retrieval of user, property, booking, review, and payment data.
+
+### Key Entities and Fields
+
+#### 1. Users
+- **Fields**:
+  - `id` (Primary Key)
+  - `name`
+  - `email`
+  - `password_hash`
+  - `role` (host or guest)
+- **Purpose**: Represents both property hosts and guests who can make bookings.
+
+#### 2. Properties
+- **Fields**:
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key to Users)
+  - `title`
+  - `description`
+  - `location`
+- **Purpose**: Represents the properties listed by users (hosts) for booking.
+
+#### 3. Bookings
+- **Fields**:
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key to Users)
+  - `property_id` (Foreign Key to Properties)
+  - `start_date`
+  - `end_date`
+- **Purpose**: Represents the reservation details made by guests on properties.
+
+#### 4. Reviews
+- **Fields**:
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key to Users)
+  - `property_id` (Foreign Key to Properties)
+  - `rating`
+  - `comment`
+- **Purpose**: Stores feedback left by guests about their stays at properties.
+
+#### 5. Payments
+- **Fields**:
+  - `id` (Primary Key)
+  - `booking_id` (Foreign Key to Bookings)
+  - `amount`
+  - `payment_date`
+  - `payment_status`
+- **Purpose**: Records payment information for bookings made by guests.
+
+---
+
+### Entity Relationships
+
+- **A user** can have multiple **properties** (one-to-many relationship).
+- **A property** can receive multiple **bookings** (one-to-many relationship).
+- **A booking** belongs to one **user** and one **property** (many-to-one relationship).
+- **A user** can leave multiple **reviews** on different **properties** (one-to-many relationship).
+- **Each payment** is associated with exactly one **booking** (one-to-one relationship).
+
+---
+
+This structure ensures that the platform is able to efficiently handle user accounts, property listings, booking management, customer feedback, and financial transactions.
+
