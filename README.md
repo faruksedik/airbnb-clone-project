@@ -242,3 +242,26 @@ Security measures are implemented to protect sensitive data and ensure that only
 Continuous Integration and Continuous Deployment processes are set up to automate testing and deployment. This ensures that new changes are reliably integrated into the platform with minimal downtime and reduced risk of errors.
 
 
+## API Security
+
+Securing the backend APIs is critical to maintaining the integrity, confidentiality, and availability of the Airbnb Clone platform. The following key security measures will be implemented:
+
+### 1. Authentication
+Authentication ensures that users are who they claim to be by requiring valid credentials (such as email and password) before granting access to the system. It is crucial for protecting sensitive user data and preventing unauthorized access to user accounts and booking information.
+
+### 2. Authorization
+Authorization controls what authenticated users are allowed to do. For example, a guest should not be able to edit another user’s booking or property listing. Proper authorization ensures that users can only access or modify resources they own or have permissions for, maintaining data integrity and system trust.
+
+### 3. Rate Limiting
+Rate limiting restricts the number of API requests a user or IP address can make within a given timeframe. This prevents abuse of the API through spammy or malicious behavior, protects the platform from Distributed Denial of Service (DDoS) attacks, and ensures fair usage for all users.
+
+### 4. Data Validation and Sanitization
+All input data from users will be validated and sanitized before being processed. This prevents common security vulnerabilities like SQL injection and cross-site scripting (XSS), helping to protect the platform's data and infrastructure.
+
+### 5. Secure Communication (HTTPS)
+All API communications will be encrypted using HTTPS. This ensures that data transmitted between the client and server remains private and cannot be intercepted or tampered with by attackers, especially important for protecting login credentials and payment information.
+
+---
+
+By implementing these measures, the project safeguards user data, secures financial transactions, and ensures the platform remains reliable and trustworthy for all participants.
+
