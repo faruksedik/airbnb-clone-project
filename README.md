@@ -129,3 +129,23 @@ Understanding the various roles within the project team is crucial for effective
   - Automates the software delivery process.
   - Ensures a balance between rapid changes and application stability.
 - **Reference**: [ITRexGroup - DevOps Engineer](https://itrexgroup.com/blog/software-development-team-structure/#devops-engineer)
+
+
+## Technology Stack
+
+This project uses a combination of modern technologies to build a robust, scalable, and efficient Airbnb-like platform. Each technology has a specific role in the architecture:
+
+### 1. Django
+- **Purpose in the Project**: Django serves as the main backend framework, allowing us to build and manage the core logic of the booking platform. It handles routing, user authentication, data management, and API creation efficiently, ensuring a secure and scalable web application.
+
+### 2. MySQL
+- **Purpose in the Project**: MySQL acts as the relational database that stores structured information such as user profiles, property listings, booking records, and payment transactions. It ensures data consistency, integrity, and supports complex queries required by the platform.
+
+### 3. GraphQL
+- **Purpose in the Project**: GraphQL is used to create a flexible and efficient API layer. It allows frontend applications to fetch exactly the data they need in a single request, reducing the amount of data transferred and improving the performance of dynamic client-side views like search results and booking details.
+
+### 4. Docker
+- **Purpose in the Project**: Docker is utilized to containerize the application, which simplifies development, testing, and deployment by ensuring that the application runs consistently across different environments. It allows developers to set up the full project (backend, database, etc.) quickly and reliably.
+
+### 5. GitHub Actions
+- **Purpose in the Project**: GitHub Actions automates the CI/CD process by running tests, building Docker images, and deploying updates automatically whenever new code is pushed to the repository. This ensures faster integration, fewer errors, and a smoother deployment workflow.
